@@ -32,10 +32,6 @@ target_link_libraries(astc-codec PRIVATE astc_utils)
 target_include_directories(astc-codec PUBLIC ../../include)
 target_include_directories(astc-codec PRIVATE ../..)
 
-add_executable(astc_inspector_cli tools/astc_inspector_cli.cc)
-target_include_directories(astc_inspector_cli PRIVATE ../..)
-target_link_libraries(astc_inspector_cli PRIVATE astc_utils)
-
 #
 # Testing
 #
